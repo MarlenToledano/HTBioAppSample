@@ -1,0 +1,208 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/RLayout_headerLogoMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageView_logo"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/settings" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLayout_middleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLayout_headerLogoMenu"
+        android:background="#FFFFFF"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView_middleBarBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/night_vision_nt" />
+
+        <TextView
+            android:id="@+id/textView_minTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="MIN"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/imageView_colorsPane"
+            android:layout_width="260dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@array/lmon_col"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/grayBackground" />
+
+        <TextView
+            android:id="@+id/textView_maxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="MAX"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView_tempView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/RLayout_middleBar"
+        android:layout_centerInParent="false"
+        android:adjustViewBounds="false"
+        android:src="@drawable/grayBackground" />
+
+    <RelativeLayout
+        android:id="@+id/RLayout_tempView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RLayout_middleBar"
+        android:layout_centerInParent="false" >
+
+        <ImageView
+            android:id="@+id/image_centerCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cursor" />
+
+        <TextView
+            android:id="@+id/textView_temperatureCenterCross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Temp"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLayout_initializationScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView_logo_initScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_initializing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Initializing"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLayout_noCameraScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ImageView_logo_noCameraScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_connectCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageView_logo_noCameraScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text1_top"
+            android:gravity="center"
+            android:text="Please connect the Therm-App™ device\nto your Android phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView_connectCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_connectCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/image_top"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:id="@+id/textView_forMoreInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_connectCamera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/text2_top"
+            android:text="For more information please visit:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/linkToThermAppWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_forMoreInformation"
+            android:layout_centerHorizontal="true"
+            android:text="www.therm-app.com"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

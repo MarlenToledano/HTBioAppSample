@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:ThermAppLibs:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ThermAppLibs/build/.transforms/9cc6f527ec213a4629a0bbe17733aae9/SDKlibs/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/ThermAppLibs/build/.transforms/9cc6f527ec213a4629a0bbe17733aae9/SDKlibs/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

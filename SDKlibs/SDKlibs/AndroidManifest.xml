@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thermapp.sdk"
+    android:versionCode="1"
+    android:versionName="2.6.28-03" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <application android:allowBackup="true" >
+        <activity
+            android:name="thermapp.sdk.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="ThermAppAPI(1.2.0)"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity>
+    </application>
+
+</manifest>

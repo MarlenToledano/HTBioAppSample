@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/mon_col"
+        android:entryValues="@array/lmon_col"
+        android:key="listMode"
+        android:title="Imaging Mode" />
+    <ListPreference
+        android:defaultValue="1"
+        android:enabled="false"
+        android:entries="@array/palette"
+        android:entryValues="@array/lpalette"
+        android:key="listpalette"
+        android:title="Thermography Color" />
+
+    <ListPreference
+        android:defaultValue="C"
+        android:entries="@array/units"
+        android:entryValues="@array/lunits"
+        android:key="listUnits"
+        android:summary="Measurement Units"
+        android:title="Units" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:enabled="false"
+        android:entries="@array/nightPalette"
+        android:entryValues="@array/lpalette"
+        android:key="listNightPalette"
+        android:title="Night Vision Color" />
+
+    <Preference
+        android:key="version"
+        android:title="Version:" />
+    
+    <Preference
+        android:key="serial"
+        android:title="Serial #:" />
+
+
+
+    <EditTextPreference
+        android:key="FrameRate"
+        android:summary="Droped Frames:"
+        android:text="1"
+        android:inputType="number"
+        android:title="Droped Frames"
+
+    />
+    
+</PreferenceScreen>

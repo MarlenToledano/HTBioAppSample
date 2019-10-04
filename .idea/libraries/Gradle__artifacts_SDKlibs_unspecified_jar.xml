@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:SDKlibs:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SDKlibs/build/.transforms/616db28ae127be01527bcc1b73a5389a/SDKlibs/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/SDKlibs/build/.transforms/616db28ae127be01527bcc1b73a5389a/SDKlibs/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
